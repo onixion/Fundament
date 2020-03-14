@@ -1,2 +1,2 @@
-# GroundWork
-C# library offering a lot of common utility and helper components.
+<p align="center"><img alt="Utilinator" src="Assets/logo.png"></p>
+<p align="center">Written by Alin Andersen.</p>

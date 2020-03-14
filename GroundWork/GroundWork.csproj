@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Alin Andersen</Authors>
+    <Description>Collection of useful utility and helper classes.</Description>
+    <PackageLicenseExpression>LGPL-3-only</PackageLicenseExpression>
+    <RepositoryType>Github</RepositoryType>
+    <RepositoryUrl>https://github.com/onixion/GroundWork</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/onixion/GroundWork</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/onixion/Utilinator/master/Assets/logo.png</PackageIconUrl>
+  </PropertyGroup>
+
+</Project>
