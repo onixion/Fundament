@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Utilinator.Core.Binary
+namespace GroundWork.Binary
 {
     /// <summary>
     /// Binary builder.

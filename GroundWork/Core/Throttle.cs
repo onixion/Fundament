@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Utilinator.Core
+namespace GroundWork.Core
 {
     /// <summary>
     /// Throttle.

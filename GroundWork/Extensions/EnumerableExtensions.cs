@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Utilinator.Core;
+using GroundWork.Core;
 
-namespace Utilinator.Extensions
+namespace GroundWork.Extensions
 {
     /// <summary>
     /// Enumerable extensions.
@@ -40,7 +40,7 @@ namespace Utilinator.Extensions
         /// <summary>
         /// To string with string func.
         /// </summary>
-        public static string ToString<T>(this IEnumerable<T> enumerable, string separator)
+        public static string ToString<T>(this IEnumerable<T> enumerable)
         {
             StringBuilder builder = new StringBuilder();
 

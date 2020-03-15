@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Utilinator.Core.Binary
+namespace GroundWork.Binary
 {
     /// <summary>
     /// Interface for binary parser builder.

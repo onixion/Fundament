@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Utilinator.Core
+namespace GroundWork.Core
 {
     /// <summary>
     /// Argument.

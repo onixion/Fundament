@@ -1,4 +1,4 @@
-﻿namespace Utilinator.Core.Binary
+﻿namespace GroundWork.Binary
 {
     /// <summary>
     /// Interface binary builder.

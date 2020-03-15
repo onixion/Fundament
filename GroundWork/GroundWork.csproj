@@ -10,7 +10,7 @@
     <RepositoryType>Github</RepositoryType>
     <RepositoryUrl>https://github.com/onixion/GroundWork</RepositoryUrl>
     <PackageProjectUrl>https://github.com/onixion/GroundWork</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/onixion/Utilinator/master/Assets/logo.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/onixion/GroundWork/master/Assets/logo.png</PackageIconUrl>
   </PropertyGroup>
 
 </Project>

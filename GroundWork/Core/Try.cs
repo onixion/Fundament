@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Utilinator.Core
+namespace GroundWork.Core
 {
     /// <summary>
     /// Try.
