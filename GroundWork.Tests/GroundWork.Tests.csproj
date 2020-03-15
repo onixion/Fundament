@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Configuration\Ini\Big.ini" />
+    <None Remove="Configuration\Ini\Medium.ini" />
+    <None Remove="Configuration\Ini\Small.ini" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\Ini\Big.ini" />
+    <EmbeddedResource Include="Configuration\Ini\Medium.ini" />
+    <EmbeddedResource Include="Configuration\Ini\Small.ini" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GroundWork\GroundWork.csproj" />
+  </ItemGroup>
+
+</Project>

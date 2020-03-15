@@ -6,11 +6,13 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>Alin Andersen</Authors>
     <Description>Collection of useful utility and helper classes.</Description>
-    <PackageLicenseExpression>LGPL-3-only</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>Github</RepositoryType>
     <RepositoryUrl>https://github.com/onixion/GroundWork</RepositoryUrl>
     <PackageProjectUrl>https://github.com/onixion/GroundWork</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/onixion/GroundWork/master/Assets/logo.png</PackageIconUrl>
+    <PackageLicenseFile></PackageLicenseFile>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
 </Project>
