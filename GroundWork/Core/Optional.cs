@@ -8,6 +8,8 @@ namespace GroundWork.Core
     //[DebuggerStepThrough]
     public class Optional<T> 
     {
+        readonly bool hasValue;
+
         /// <summary>
         /// Value.
         /// </summary>
@@ -15,7 +17,7 @@ namespace GroundWork.Core
         {
             get
             {
-                if (HasValue) return value;
+                if (hasValue) return value;
                 throw new InvalidOperationException($"Optional value missing.");
             }
         }
@@ -24,7 +26,7 @@ namespace GroundWork.Core
         /// <summary>
         /// Has value.
         /// </summary>
-        public bool HasValue { get; }
+        public bool HasValue => hasValue;
 
         /// <summary>
         /// Has no value.
@@ -33,18 +35,18 @@ namespace GroundWork.Core
         {
             get
             {
-                return !HasValue;
+                return !hasValue;
             }
         }
 
         /// <summary>
-        /// Value or null.
+        /// Value or default.
         /// </summary>
         public T ValueOrDefault
         {
             get
             {
-                return HasValue ? Value : default(T);
+                return hasValue ? Value : default(T);
             }
         }
 
@@ -59,12 +61,12 @@ namespace GroundWork.Core
         /// Constructor.
         /// </summary>
         /// <param name="value">Value.</param>
-        public Optional(T value = default(T))
+        public Optional(T value = default)
         {
-            if (value != null)
+            if (value != default)
             {
                 this.value = value;
-                HasValue = true;
+                hasValue = true;
             }
         }
 

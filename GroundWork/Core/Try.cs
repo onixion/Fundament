@@ -30,17 +30,17 @@ namespace GroundWork.Core
         /// Catch ignore exception thrown by the given async action.
         /// </summary>
         /// <param name="action">Action.</param>
-        public static Task CatchIgnoreAsync(Func<Task> action)
+        public static async Task CatchIgnoreAsync(Func<Task> action)
         {
             Argument.NotNull(nameof(action), action);
 
             try
             {
-                return action();
+                await action();
             }
             catch
             {
-                return Task.CompletedTask;
+                // ignore
             }
         }
 
