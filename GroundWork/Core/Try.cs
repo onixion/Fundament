@@ -85,6 +85,46 @@ namespace GroundWork.Core
         }
 
         /// <summary>
+        /// Catch exception from action asynchronously.
+        /// </summary>
+        /// <param name="action">Action.</param>
+        /// <param name="exception">Exception.</param>
+        public static async Task CatchAsync(Func<Task> action, Action<Exception> exception)
+        {
+            Argument.NotNull(nameof(action), action);
+            Argument.NotNull(nameof(exception), exception);
+
+            try
+            {
+                await action();
+            }
+            catch (Exception e)
+            {
+                exception(e);
+            }
+        }
+
+        /// <summary>
+        /// Catch exception from action asynchronously.
+        /// </summary>
+        /// <param name="action">Action.</param>
+        /// <param name="exception">Exception.</param>
+        public static async Task CatchAsync(Func<Task> action, Func<Exception, Task> exception)
+        {
+            Argument.NotNull(nameof(action), action);
+            Argument.NotNull(nameof(exception), exception);
+
+            try
+            {
+                await action();
+            }
+            catch (Exception e)
+            {
+                await exception(e);
+            }
+        }
+
+        /// <summary>
         /// Catch specific exception.
         /// </summary>
         /// <typeparam name="TException">Type of exception.</typeparam>
@@ -102,6 +142,48 @@ namespace GroundWork.Core
             catch (TException e)
             {
                 exception(e);
+            }
+        }
+
+        /// <summary>
+        /// Catch specific exception asynchronously.
+        /// </summary>
+        /// <typeparam name="TException">Type of exception.</typeparam>
+        /// <param name="action">Action.</param>
+        /// <param name="exception">Exception.</param>
+        public static async Task CatchAsync<TException>(Func<Task> action, Action<TException> exception) where TException : Exception
+        {
+            Argument.NotNull(nameof(action), action);
+            Argument.NotNull(nameof(exception), exception);
+
+            try
+            {
+                await action();
+            }
+            catch (TException e)
+            {
+                exception(e);
+            }
+        }
+
+        /// <summary>
+        /// Catch specific exception asynchronously.
+        /// </summary>
+        /// <typeparam name="TException">Type of exception.</typeparam>
+        /// <param name="action">Action.</param>
+        /// <param name="exception">Exception.</param>
+        public static async Task CatchAsync<TException>(Func<Task> action, Func<TException, Task> exception) where TException : Exception
+        {
+            Argument.NotNull(nameof(action), action);
+            Argument.NotNull(nameof(exception), exception);
+
+            try
+            {
+                await action();
+            }
+            catch (TException e)
+            {
+                await exception(e);
             }
         }
     }
