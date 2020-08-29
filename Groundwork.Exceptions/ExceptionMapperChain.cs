@@ -1,10 +1,10 @@
-﻿using Groundwork.Contracts;
-using Groundwork.Exceptions.Contracts;
+﻿using GroundWork.Contracts;
+using GroundWork.Exceptions.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Groundwork.Exceptions
+namespace GroundWork.Exceptions
 {
     /// <summary>
     /// Exception mapper chain implementation.

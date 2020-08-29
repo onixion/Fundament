@@ -1,4 +1,4 @@
-﻿namespace Groundwork.Exceptions.Contracts
+﻿namespace GroundWork.Exceptions.Contracts
 {
     /// <summary>
     /// Exception mapper chain interface.

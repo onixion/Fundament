@@ -1,9 +1,9 @@
-﻿using Groundwork.Exceptions.Contracts;
+﻿using GroundWork.Exceptions.Contracts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Groundwork.Exceptions
+namespace GroundWork.Exceptions
 {
     /// <summary>
     /// Exception mapper builder implementation.
@@ -54,9 +54,8 @@ namespace Groundwork.Exceptions
         /// <returns>Exception mapper.</returns>
         public IExceptionMapper<T> Build()
         {
-            return new ExceptionMapper<T>()
+            return new ExceptionMapper<T>();
         }
-
 
         class Holder
         {

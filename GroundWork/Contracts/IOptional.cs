@@ -1,4 +1,4 @@
-﻿namespace Groundwork.Contracts
+﻿namespace GroundWork.Contracts
 {
     /// <summary>
     /// Optional interface.

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Groundwork
+namespace GroundWork
 {
     /// <summary>
     /// Argument.

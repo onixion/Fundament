@@ -1,7 +1,7 @@
-﻿using Groundwork.Exceptions.Contracts;
+﻿using GroundWork.Exceptions.Contracts;
 using System.Collections.Generic;
 
-namespace Groundwork.Exceptions
+namespace GroundWork.Exceptions
 {
     /// <summary>
     /// Exception mapper chain builder.

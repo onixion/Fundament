@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace Groundwork.Tests
+namespace GroundWork.Tests
 {
     /// <summary>
     /// Unit tests for <see cref="Optional"/> and <see cref="Optional{T}"/>.

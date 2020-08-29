@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Groundwork", "Groundwork\Groundwork.csproj", "{C6108835-2186-4A30-A666-66CE42CAE155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroundWork", "Groundwork\GroundWork.csproj", "{C6108835-2186-4A30-A666-66CE42CAE155}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Groundwork.Tests", "Groundwork.Tests\Groundwork.Tests.csproj", "{91CA89FD-CD1B-436A-91C1-F2115F520C35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroundWork.Tests", "Groundwork.Tests\GroundWork.Tests.csproj", "{91CA89FD-CD1B-436A-91C1-F2115F520C35}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Groundwork.Exceptions", "Groundwork.Exceptions\Groundwork.Exceptions.csproj", "{BFE789BD-C270-468A-8BDF-34CE070ACE54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroundWork.Exceptions", "Groundwork.Exceptions\GroundWork.Exceptions.csproj", "{BFE789BD-C270-468A-8BDF-34CE070ACE54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Groundwork.Exceptions.Tests", "Groundwork.Exceptions.Tests\Groundwork.Exceptions.Tests.csproj", "{9770CBA3-B5B0-4700-AB1B-B60CC8830FF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroundWork.Exceptions.Tests", "Groundwork.Exceptions.Tests\GroundWork.Exceptions.Tests.csproj", "{9770CBA3-B5B0-4700-AB1B-B60CC8830FF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

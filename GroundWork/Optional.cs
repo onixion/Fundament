@@ -1,8 +1,8 @@
-﻿using Groundwork.Contracts;
+﻿using GroundWork.Contracts;
 using System;
 using System.Diagnostics;
 
-namespace Groundwork
+namespace GroundWork
 {
     /// <summary>
     /// Optional.

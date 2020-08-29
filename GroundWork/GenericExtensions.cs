@@ -1,6 +1,6 @@
-﻿using Groundwork.Contracts;
+﻿using GroundWork.Contracts;
 
-namespace Groundwork
+namespace GroundWork
 {
     /// <summary>
     /// Generic extensions.

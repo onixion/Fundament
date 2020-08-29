@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Groundwork.Exceptions.Tests
+namespace GroundWork.Exceptions.Tests
 {
     /// <summary>
     /// Unit tests for <see cref="ExceptionMapper{T}"/>

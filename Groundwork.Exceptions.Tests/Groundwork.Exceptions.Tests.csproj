@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Groundwork.Exceptions\Groundwork.Exceptions.csproj" />
+    <ProjectReference Include="..\GroundWork.Exceptions\GroundWork.Exceptions.csproj" />
   </ItemGroup>
 
 </Project>

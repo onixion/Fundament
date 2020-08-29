@@ -1,7 +1,7 @@
-﻿using Groundwork.Contracts;
+﻿using GroundWork.Contracts;
 using System;
 
-namespace Groundwork.Exceptions.Contracts
+namespace GroundWork.Exceptions.Contracts
 {
     /// <summary>
     /// Exception mapper interface.
