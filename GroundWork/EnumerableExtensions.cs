@@ -35,6 +35,8 @@ namespace GroundWork
         /// <returns>If true then it is empty, else false.</returns>
         public static bool IsEmpty<T>(this IEnumerable<T> enumerable)
         {
+            Argument.NotNull(nameof(enumerable), enumerable);
+
             return !enumerable.Any();
         }
 
@@ -43,6 +45,8 @@ namespace GroundWork
         /// </summary>
         public static string ToString<T>(this IEnumerable<T> enumerable)
         {
+            Argument.NotNull(nameof(enumerable), enumerable);
+
             StringBuilder builder = new StringBuilder();
 
             foreach (T item in enumerable)
@@ -58,6 +62,8 @@ namespace GroundWork
         /// </summary>
         public static string ToString<T>(this IEnumerable<T> enumerable, Func<T, string> stringFunc)
         {
+            Argument.NotNull(nameof(enumerable), enumerable);
+
             StringBuilder builder = new StringBuilder();
 
             foreach (T item in enumerable)

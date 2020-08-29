@@ -17,6 +17,8 @@ namespace GroundWork
         /// </returns>
         public static bool HasNoValue<T>(this IOptional<T> optional)
         {
+            Argument.NotNull(nameof(optional), optional);
+
             return !optional.HasValue;
         }
     }

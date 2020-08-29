@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Groundwork\GroundWork.csproj" />
+    <ProjectReference Include="..\GroundWork\GroundWork.csproj" />
   </ItemGroup>
 
 </Project>

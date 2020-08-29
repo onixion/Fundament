@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GroundWork.Exceptions.Contracts
+﻿namespace GroundWork.Exceptions.Contracts
 {
     /// <summary>
     /// Exception mapper builder interface.
@@ -9,18 +7,16 @@ namespace GroundWork.Exceptions.Contracts
     public interface IExceptionMapperBuilder<T>
     {
         /// <summary>
-        /// Add exception handler.
+        /// Add exception mapper.
         /// </summary>
-        /// <param name="exceptionType">Exception type to handle.</param>
-        /// <param name="shouldHandleException">Func that checks whether or not the given exception is handled by this handler.</param>
-        /// <param name="mappedObject">Mapped object.</param>
+        /// <param name="exceptionMapper">Exception mapper to add.</param>
         /// <returns>Exception mapper builder.</returns>
-        IExceptionMapperBuilder<T> AddExceptionHandler(Type exceptionType, Func<Exception, bool> shouldHandleException, T mappedObject);
+        IExceptionMapperBuilder<T> AddExceptionMapper(IExceptionMapper<T> exceptionMapper);
 
         /// <summary>
-        /// Clears the exception handlers.
+        /// Remove all exception mappers.
         /// </summary>
-        void ClearExceptionHandlers();
+        void RemoveAllExceptionMappers();
 
         /// <summary>
         /// Build exception mapper.

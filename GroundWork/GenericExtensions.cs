@@ -14,6 +14,8 @@ namespace GroundWork
         /// <returns>Value wrapped in an optional.</returns>
         public static IOptional ToOptional(this object value)
         {
+            Argument.NotNull(nameof(value), value);
+
             return new Optional(value);
         }
 
@@ -25,6 +27,8 @@ namespace GroundWork
         /// <returns>Value wrapped in an optional.</returns>
         public static IOptional<T> ToOptional<T>(this T value)
         {
+            Argument.NotNull(nameof(value), value);
+
             return new Optional<T>(value);
         }
     }

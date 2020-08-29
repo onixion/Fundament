@@ -3,7 +3,7 @@
 namespace GroundWork.Exceptions.Tests
 {
     /// <summary>
-    /// Unit tests for <see cref="ExceptionMapper{T}"/>
+    /// Unit tests for <see cref="CompositionExceptionMapper{T}"/>
     /// </summary>
     [TestClass]
     public class ExceptionMapperTests

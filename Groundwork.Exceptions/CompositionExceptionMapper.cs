@@ -1,24 +1,28 @@
 ﻿using GroundWork.Contracts;
 using GroundWork.Exceptions.Contracts;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace GroundWork.Exceptions
 {
     /// <summary>
-    /// Exception mapper chain implementation.
+    /// Exception mapper implementation.
     /// </summary>
     /// <typeparam name="T">Type of mapped object.</typeparam>
-    public class ExceptionMapperChain<T> : IExceptionMapper<T>
+    public class CompositionExceptionMapper<T> : IExceptionMapper<T>
     {
-        private readonly IEnumerable<IExceptionMapper<T>> exceptionMappers;
+        readonly IEnumerable<IExceptionMapper<T>> exceptionMappers;
 
         /// <summary>
         /// Constructor.
         /// </summary>
-        public ExceptionMapperChain(IEnumerable<IExceptionMapper<T>> exceptionMappers)
+        public CompositionExceptionMapper(IEnumerable<IExceptionMapper<T>> exceptionMappers)
         {
+            Argument.NotNull(nameof(exceptionMappers), exceptionMappers);
+
             this.exceptionMappers = exceptionMappers.ToArray();
         }
 
@@ -31,13 +35,13 @@ namespace GroundWork.Exceptions
         {
             foreach(var exceptionMapper in exceptionMappers)
             {
-                var optionalMappedObject = exceptionMapper.Map(e);
+                var mappedObject = exceptionMapper.Map(e);
 
-                if (optionalMappedObject.HasValue)
-                    return optionalMappedObject;
+                if (mappedObject.HasValue)
+                    return mappedObject;
             }
 
-            return new Optional<T>();
+            return Optional<T>.Empty();
         }
     }
 }
