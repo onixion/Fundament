@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Groundwork.Exceptions</id>
+        <version>1.0.0</version>
+        <authors>Alin Andersen</authors>
+        <owners>onixion</owners>
+        <projectUrl>https://github.com/onixion/Groundwork</projectUrl>
+        <license type="expression">MIT</license>
+        <iconUrl>https://github.com/onixion/Groundwork/blob/master/Assets/icon.png?raw=true</iconUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <!-- <releaseNotes>Bug fixes and performance improvements</releaseNotes> -->
+        <description>Common utility and helper library for exceptions.</description>
+        <copyright>Copyright ©2020 Alin Andersen</copyright>
+        <tags>common utility exceptions</tags>
+    </metadata>
+</package>
