@@ -8,14 +8,7 @@ namespace GroundWork
     /// </summary>
     public class Throttle
     {
-        /// <summary>
-        /// Throttle time span.
-        /// </summary>
         readonly TimeSpan throttleTimeSpan;
-
-        /// <summary>
-        /// Stop watch.
-        /// </summary>
         readonly Stopwatch stopwatch = new Stopwatch();
 
         /// <summary>
@@ -34,16 +27,13 @@ namespace GroundWork
         /// <returns>If true, then it is throttling, false otherwise.</returns>
         public bool IsThrottling()
         {
-            lock(stopwatch)
+            if (stopwatch.Elapsed > throttleTimeSpan)
             {
-                if (stopwatch.Elapsed > throttleTimeSpan)
-                {
-                    stopwatch.Restart();
-                    return true;
-                }
-
-                return false;
+                stopwatch.Restart();
+                return true;
             }
+
+            return false;
         }
     }
 }

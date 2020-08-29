@@ -18,7 +18,9 @@ namespace GroundWork
             get
             {
                 if (value == null)
+                {
                     throw new InvalidOperationException($"Optional value missing.");
+                }
 
                 return value;
             }
@@ -57,7 +59,9 @@ namespace GroundWork
         public override bool Equals(object obj)
         {
             if (obj is Optional optional)
+            {
                 return Equals(optional);
+            }
 
             return false;
         }
@@ -68,7 +72,9 @@ namespace GroundWork
         public bool Equals(Optional other)
         {
             if (HasValue && other.HasValue)
+            {
                 return Equals(value, other.value);
+            }
 
             return HasValue == other.HasValue;
         }
@@ -115,7 +121,9 @@ namespace GroundWork
             get
             {
                 if (value == null)
+                {
                     throw new InvalidOperationException($"Optional value missing.");
+                }
 
                 return value;
             }
@@ -162,7 +170,9 @@ namespace GroundWork
         public override bool Equals(object obj)
         {
             if (obj is Optional<T> optional)
+            {
                 return Equals(optional);
+            }
 
             return false;
         }
@@ -173,7 +183,9 @@ namespace GroundWork
         public bool Equals(Optional<T> other)
         {
             if (HasValue && other.HasValue)
+            {
                 return Equals(value, other.value);
+            }
 
             return HasValue == other.HasValue;
         }

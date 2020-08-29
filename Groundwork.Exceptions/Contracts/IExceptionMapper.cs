@@ -12,8 +12,8 @@ namespace GroundWork.Exceptions.Contracts
         /// <summary>
         /// Map exception.
         /// </summary>
-        /// <param name="e">Exception to map.</param>
+        /// <param name="exception">Exception to map.</param>
         /// <returns>Optional mapped object.</returns>
-        IOptional<T> Map(Exception e);
+        IOptional<T> Map(Exception exception);
     }
 }
